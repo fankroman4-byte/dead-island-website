@@ -48,7 +48,8 @@ page=page.replace('</head>',metadata+'</head>')
 (root/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>'+url+'/</loc></url></urlset>\n',encoding='utf-8')
 print('STATIC_SITE_READY',url)
 
-# The player archive is a separate GitHub Release asset, never the repository source.
-release={'filename': 'DeadIsland-Windows.zip', 'bytes': 47952801, 'sha256': 'a0e36c71e7f073f7a505d11477be4c2681562c5a2fa2c50b0d650c57ba5c80fd', 'url': 'https://github.com/fankroman4-byte/dead-island-website/releases/download/v0.2.0-alpha/DeadIsland-Windows.zip'}
+
+# The player archive is a separate Release asset.
+release={'filename': 'DeadIsland-Windows.zip', 'bytes': 47965233, 'sha256': 'fab8ca9deacddbb748429859a7206f446c0d27e75c2105952b891888cc5b6129', 'url': 'https://github.com/fankroman4-byte/dead-island-website/releases/download/v0.2.1-alpha/DeadIsland-Windows.zip'}
 (root/'downloads').mkdir(exist_ok=True)
 (root/'downloads/release.json').write_text(json.dumps(release,indent=2),encoding='utf-8')
