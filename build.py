@@ -52,6 +52,6 @@ print('STATIC_SITE_READY',url)
 
 
 # The player archive is a separate Release asset.
-release={'filename': 'DeadIsland-Windows.zip', 'bytes': 50556370, 'sha256': 'eccf8c3181d086d87cbafdcee5ba58e912bca673209f76828484dfe8d696b51f', 'url': 'https://github.com/fankroman4-byte/dead-island-website/releases/download/v0.5.0-alpha/DeadIsland-Windows.zip'}
+release={'filename': 'DeadIsland-Windows.zip', 'bytes': 50802300, 'sha256': '0611da008b1eb0315b3a7d485e9a4be0ef43891146395ccce5d5c5f8397833ae', 'url': 'https://github.com/fankroman4-byte/dead-island-website/releases/download/v0.6.0-alpha/DeadIsland-Windows.zip'}
 (root/'downloads').mkdir(exist_ok=True)
 (root/'downloads/release.json').write_text(json.dumps(release,indent=2),encoding='utf-8')
